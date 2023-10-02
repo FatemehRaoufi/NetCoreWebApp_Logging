@@ -15,3 +15,4 @@ When calling the Log() method, the log is written to every registered provider.
 //https://medium.com/@stavsofer/structured-logging-and-logs-management-asp-net-core-serilog-seq-61109f740696
 //https://www.infoworld.com/article/3624022/how-to-use-advanced-serilog-features-in-aspnet-core-mvc.html
 //https://dotnetcoretutorials.com/logging-asp-net-core/?expand_article=1
+//https://www.tutorialsteacher.com/core/aspnet-core-logging
