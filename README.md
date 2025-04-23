@@ -1,13 +1,16 @@
 Project Overview
+
 This project demonstrates the usage of Logging in an ASP.NET Core application. It integrates Serilog for structured logging, utilizes Dependency Injection (DI), and adheres to the Dependency Inversion Principle (DIP). The application also showcases how to configure logging with different providers like Console, File, and EventLog.
 ________________________________________
 Key Features
+
 •	Logging with Serilog: Use Serilog as the primary logging framework instead of the built-in ILoggerFactory.
 •	ASP.NET Core Razor Pages: Demonstrates the use of ILogger to log messages and exceptions within a Razor Pages application.
 •	Dependency Injection: Implements DI to configure services like logging and handle dependency inversion properly.
 •	Multiple Log Providers: Configures different log providers such as Console, File, and EventLog.
 ________________________________________
 Getting Started
+
 1. Install Required Packages
 Before you start, install the necessary NuGet packages:
 dotnet add package Serilog.AspNetCore
@@ -108,11 +111,13 @@ Ensure the IDepository is registered correctly in the DI container:
 builder.Services.AddScoped<IDepository, Depository>();
 ________________________________________
 Logging Levels
+
 •	LogInformation: Logs informational messages.
 •	LogWarning: Logs warnings about potential issues.
 •	LogError: Logs error messages and exceptions.
 •	LogCritical: Logs critical errors that affect application functionality.
 ________________________________________
 Conclusion
+
 This project demonstrates a clean and flexible way of configuring and using logging in ASP.NET Core with Serilog. It showcases how to use Dependency Injection to handle logging in a way that follows the Dependency Inversion Principle (DIP), keeping the code clean, modular, and testable.
 
