@@ -2,10 +2,10 @@
 
 namespace NetCoreWebApp_Logging.Services
 {
-    /// <summary>
-    /// Logging in ASP.NET Core is available through the built-in Dependency Inversion (DI). 
-    /// If you inspect the ConfigureLogging method, 
-    /// it calls AddLogging, which registers a generic ILogger in the DI container as follows:
+   /// <summary>
+    /// Logging in ASP.NET Core is configured through Dependency Injection (DI). 
+    /// The ConfigureLogging method calls AddLogging, which registers a generic ILogger in the DI container.
+    /// This approach follows the Dependency Inversion Principle (DIP), as high-level modules depend on abstractions (ILogger<T>) rather than concrete implementations.
     /// </summary>
     public class Depository : IDepository
     {
